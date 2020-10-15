@@ -1,0 +1,17 @@
+maven每次加载依赖都会导致JDK版本变为1.5，无法运行
+
+方法1.更改Maven的setting文件
+
+方法2.直接在当前Maven的Pom.xml添加下面的标签，source和target改为自己的版本即可。
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <configuration>
+        <source>1.7</source>
+        <target>1.7</target>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
