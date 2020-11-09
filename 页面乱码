@@ -1,0 +1,1 @@
+jsp页面添加设置编码方式<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
