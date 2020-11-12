@@ -4,4 +4,4 @@ To disable safe mode, toggle the option in Preferences -> SQL Editor and reconne
 错误代码：1175。您正在使用安全更新模式，并且试图在没有使用KEY列的WHERE的情况下更新表。 要禁用安全模式，请在“首选项”->“ SQL编辑器”中切换选项，然后重新连接。
 //下面是输入命令解除更新保护
 SET SQL_SAFE_UPDATES = 0;
-//或者进入mysql的prefrences设置的SQL Editor最下面有个Safe update的选项，取消即可。
+//或者进入mysql的prefrences设置的SQL Editor最下面有个Safe update的选项，取消再重启即可，该设置是当前连接的设置，非全局设置。
